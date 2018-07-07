@@ -143,11 +143,9 @@ a:link, a:visited, a:active, a:hover {
 .hoverbutton {
 	margin-top: 20px;
 	text-align: center;
-	width: 200px;
 }
 
 .hoverbutton a, button {
-	display: inline;
    	position: relative;
 	width: 200px;
 	margin: 0 auto;
