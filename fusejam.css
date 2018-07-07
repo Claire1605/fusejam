@@ -224,7 +224,7 @@ a:link, a:visited, a:active, a:hover {
 
 .gallery figure img 
 {
-	width: 248px;
+	width: auto;
 	height: 248px;
 }
 
