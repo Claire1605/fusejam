@@ -148,7 +148,7 @@ a:link, a:visited, a:active, a:hover {
 .hoverbutton a, button {
 	display: block;
    	position: relative;
-	width: 200px;
+	width: 350px;
 	margin: 0 auto;
 	background: #FB4991;
 	padding: 5px 0px;
@@ -194,7 +194,7 @@ a:link, a:visited, a:active, a:hover {
 	position: relative;
 	width: 500px;
 	height: 280px;
-	margin: 1px;
+	margin: 0 auto;
 	overflow: hidden;
 }
 
