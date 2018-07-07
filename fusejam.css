@@ -1,6 +1,6 @@
 html, body {
 	font-family: 'Rajdhani', sans-serif;
-	font-size: 16px;
+	font-size: 3em;
 	line-height: 24px;
 	color: #4BC4B5;
 	padding: 0;
@@ -11,7 +11,7 @@ html, body {
 
 body {
 	padding: 0 0 0 0;
-	width: 768px;
+	width: 500px;
 	height: 100%;
 	margin: 0 auto;
 }
@@ -204,8 +204,8 @@ button {
 {
 	float: left;
 	position: relative;
-	width: 768px;
-	height: 432px;
+	width: 500px;
+	height: 280px;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -237,8 +237,8 @@ button {
 
 .gallery figure img 
 {
-	width: 768px;
-	height: 432px;
+	width: 500px;
+	height: 280px;
 }
 
 .gallery:after { 
