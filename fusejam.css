@@ -146,7 +146,6 @@ a:link, a:visited, a:active, a:hover {
 }
 
 .hoverbutton a, button {
-	display: inline;
    	position: relative;
 	width: 200px;
 	margin: 0 auto;
