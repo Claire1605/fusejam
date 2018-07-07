@@ -146,6 +146,7 @@ a:link, a:visited, a:active, a:hover {
 }
 
 .hoverbutton a, button {
+	display: block;
    	position: relative;
 	width: 200px;
 	margin: 0 auto;
@@ -191,8 +192,8 @@ a:link, a:visited, a:active, a:hover {
 {
 	float: left;
 	position: relative;
-	width: auto;
-	height: 248px;
+	width: 500px;
+	height: 280px;
 	margin: 1px;
 	overflow: hidden;
 }
@@ -224,8 +225,8 @@ a:link, a:visited, a:active, a:hover {
 
 .gallery figure img 
 {
-	width: auto;
-	height: 248px;
+	width: 500px;
+	height: 280px;
 }
 
 .gallery:after { 
