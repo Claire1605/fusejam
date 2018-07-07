@@ -11,7 +11,7 @@ html, body {
 
 body {
 	padding: 0 0 0 0;
-	width: 500px;
+	width: 768px;
 	height: 100%;
 	margin: 0 auto;
 }
@@ -204,8 +204,8 @@ button {
 {
 	float: left;
 	position: relative;
-	width: 500px;
-	height: 280px;
+	width: 768px;
+	height: 432px;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -237,8 +237,8 @@ button {
 
 .gallery figure img 
 {
-	width: 500px;
-	height: 280px;
+	width: 768px;
+	height: 432px;
 }
 
 .gallery:after { 
