@@ -16,28 +16,7 @@ body {
 	margin: 0 auto;
 }
 
-.wrapper {
-		display: grid;
-		grid-gap: 34px;
-		grid-template-columns: 100px 100px 100px 100px;
-		background-color: #fff9;
-		border-radius: 10px;
-	}
-
-	.box {
-		background-color: #4BC4B5;
-		color: #fff;
-		border-radius: 5px;
-		padding: 20px;
-		font-size: 250%;
-	}
-
 img { max-width: 100%; border:0; }
-
-.center {
-    display: block;
-    margin: 0 auto;
-}
 
 h1, h2, h3, h4 {
 	font-family: 'Rajdhani', sans-serif;
@@ -110,7 +89,7 @@ h1, h2, h3, h4 {
 }
 
 .bgrdimage {
-	background-image: url('fuseposter2.png'), linear-gradient(to bottom, #5a3257,#bcbcbc);
+	background-image: url('fuseposterborder-feathered.png'), linear-gradient(to bottom, #7fb7ea,#7dd5d7);
 	background-size: contain; 
 	background-repeat: no-repeat;
     background-position: center; 
@@ -166,7 +145,7 @@ p {
 .right { text-align: right; }
 
 a:link, a:visited, a:active, a:hover { 
-	color: #FB4991; 
+	color: inherit; 
 	text-decoration: none; 
 }
 
@@ -278,7 +257,6 @@ div.desc {
     display: table;
     clear: both;
 }
-
 
 /*drop-down menu*/
 ul {
