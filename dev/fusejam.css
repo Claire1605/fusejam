@@ -1,0 +1,357 @@
+html, body {
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 20px;
+	line-height: 24px;
+	color: #4BC4B5;
+	padding: 0;
+	margin: 0;
+    height: 100%;
+	background-attachment: fixed;
+}
+
+body {
+	padding: 0 0 0 0;
+	width: 500px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.wrapper {
+		display: grid;
+		grid-gap: 34px;
+		grid-template-columns: 100px 100px 100px 100px;
+		background-color: #fff9;
+		border-radius: 10px;
+	}
+
+	.box {
+		background-color: #4BC4B5;
+		color: #fff;
+		border-radius: 5px;
+		padding: 20px;
+		font-size: 250%;
+	}
+
+img { max-width: 100%; border:0; }
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Rajdhani', sans-serif;
+	margin: 0;
+	padding: 0;
+	margin-top: 20px;
+	margin-bottom: 8px;
+	text-align: center;
+	text-shadow:
+    -3px -3px 0 #fff,
+    3px -3px 0 #fff,
+    -3px 3px 0 #fff,
+    3px 3px 0 #fff,  
+	4px 6px 0 #FB4991,
+	-4px 6px 0 #FB4991;
+}
+
+.logo {
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 5.4em;
+	line-height: 1em;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 8px;
+}
+
+.logo2 {
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 4em;
+	line-height: 1em;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 8px;
+}
+
+.bio {
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 1.45em;
+	line-height: 1em;
+	text-decoration: none;
+	margin: 0;
+	margin-bottom: 8px;
+	text-align: center;
+	text-shadow:
+    -2px -2px 0 #fff,
+    2px -2px 0 #fff,
+    -2px 2px 0 #fff,
+    2px 2px 0 #fff;  
+	background-color: #fffe;
+	border: 2px solid #fff;
+	border-radius: 8px;
+	padding: 10px;
+	box-shadow: 0px 5px 0px 0px #ccc;
+}
+
+.boxtext {
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 1em;
+	line-height: 1.2em;
+	text-decoration: none;
+	margin: 0;
+	margin-bottom: 8px;
+	background-color: #fffe;
+	border: 2px solid #fff;
+	border-radius: 8px;
+	padding: 10px;
+	box-shadow: 0px 5px 0px 0px #ccc;
+}
+
+.bgrdimage {
+	background-image: url('fuseposter2.png'), linear-gradient(to bottom, #5a3257,#bcbcbc);
+	background-size: contain; 
+	background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.bgrdimage-b {
+	background-image: url('fuseposterzoomed-feathered.png'), linear-gradient(to bottom, #7fb7ea,#7dd5d7);
+	background-size: cover; 
+	background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.video
+{	
+	width: 99%;
+    height:99%;
+}
+.iframeholder{
+	margin: 0 auto;
+	padding: 0;
+    width: 490px;
+    height:274px;
+    position:relative;
+}
+.iframeborder{
+    position:absolute;
+    top:-2px;
+    left: -2px;
+    width:100%;
+	height: 100%;
+	border: 5px solid #fff;
+	border-radius: 8px;
+	pointer-events: none;
+	box-shadow: 0px 5px 0px 0px #ccc;
+}
+
+hr {
+	border: 0;
+    height: 0;
+    border-top: 1px solid #3d2c21;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	margin: 30px 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 8px;
+}
+
+.center { text-align: center; }
+.left { text-align: left; }
+.right { text-align: right; }
+
+a:link, a:visited, a:active, a:hover { 
+	color: #FB4991; 
+	text-decoration: none; 
+}
+
+.hoverbutton {
+	margin-top: 20px;
+	text-align: center;
+	color: #fff;
+}
+
+.hoverbutton a, button {
+	display: block;
+   	position: relative;
+	width: 350px;
+	margin: 0 auto;
+	background: #FB4991;
+	padding: 5px 0px;
+	border: 0;
+	color: #fff;
+	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	
+	-webkit-box-shadow: 0px 6px 0px 0px #4bc4b5aa;
+	-moz-box-shadow:    0px 6px 0px 0px #4bc4b5aa;
+	box-shadow:         0px 6px 0px 0px #4bc4b5aa
+	
+	-webkit-transition-duration: 0.12s;
+    -moz-transition-duration: 0.12s;
+    transition-duration: 0.12s;
+}
+
+.hoverbutton a:hover, button:hover {
+	-webkit-transform: translate(0,3px);
+	-moz-transform: translate(0,3px);
+	transform: translate(0,3px);
+	
+	-webkit-box-shadow: 0px 3px 0px 0px rgba(152, 124, 57, 0.5);
+	-moz-box-shadow:    0px 3px 0px 0px rgba(152, 124, 57, 0.5);
+	box-shadow:         0px 3px 0px 0px rgba(152, 124, 57, 0.5);
+}
+
+.hoverbutton a:active, button:active {
+	-webkit-transform: translate(0,5px);
+	-moz-transform: translate(0,5px);
+	transform: translate(0,5px);
+	
+	-webkit-box-shadow: 0px 1px 0px 0px rgba(152, 124, 57, 0.5);
+	-moz-box-shadow:    0px 1px 0px 0px rgba(152, 124, 57, 0.5);
+	box-shadow:         0px 1px 0px 0px rgba(152, 124, 57, 0.5);
+}
+
+button {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	color: inherit;
+	width: 400px;
+	margin: 0 auto;
+	padding: 5px 15px;
+	margin-top: 6px;
+	cursor: pointer;
+}
+
+/*gallery*/
+div.gallery {
+    border: 0px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 0px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 5000px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*drop-down menu*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff8;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 2px 52px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #FB4991;
+	color: white;
+	border-radius: 8px;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	border-radius: 8px;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #FB4991;color: white;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*table*/
+table {
+    font-family: 'Rajdhani', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+th {
+    text-align: center;
+	font-size: 32px;
+	width: 33.33%;
+}
+
+td { 
+    text-align: center;
+	font-size: 20px;
+	 width: 33.33%;
+}
+
+@media only screen and (max-width: 768px) { 
+	/* MOBILE */
+}
