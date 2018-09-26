@@ -2,7 +2,7 @@
 <html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
 	<meta charset="utf-8">
-	<title>Fuse Jam #02 Themes</title>
+	<title>Fuse Jam #01 Themes</title>
 	<meta name="description" content="A friendly and inclusive game jam that aims to grow the game development scene in Bristol.">
 	<meta name="keywords" content="game, game jam, game dev, indie game, fuse jam, bristol game, bristol, jam, event">
 	<meta name="author" content="Fuse Jam">
@@ -26,7 +26,7 @@
 	<meta name="twitter:creator" content="@FuseJamBristol">
 	
 </head>
-<body class="bgrdimage" onload="HideDiv()">
+<body class="bgrdimage-b" onload="HideDiv()">
 
 <ul class="boxtext">
   <li><a href="index.html">Home</a></li>
@@ -42,31 +42,26 @@
 
 <br>
 
-<h1 class="logo2">Fuse Jam #02 Themes</h1>
+<h1 class="logo2">Fuse Jam #01 Themes</h1>
 
 <br>
-<p class="boxtext">Click your Fuse Sound! Depending on your browser it will either auto-download or open a new page to play it, where you can right click -> save as ... to save the sound.</p>
-
-<br><br>
-<div class="wrapper">
-		<div class="invisiblebox"></div>
-		<div class="box a"><a href="fuse2sounds/FuseSound1.wav" download>01</a></div>
-		<div class="box a"><a href="fuse2sounds/FuseSound2.wav" download>02</a></div>
-		<div class="box a"><a href="fuse2sounds/FuseSound3.wav" download>03</a></div>
-		<div class="box a"><a href="fuse2sounds/FuseSound4.wav" download>04</a></div>
-		<div class="box a"><a href="fuse2sounds/FuseSound5.wav" download>05</a></div>
-		<div class="box a"><a href="fuse2sounds/FuseSound6.wav" download>06</a></div>
-		<div class="box a"><a href="fuse2sounds/FuseSound7.wav" download>07</a></div>
-		<div class="box a"><a href="fuse2sounds/FuseSound8.wav" download>08</a></div>
-		<div class="box a"><a href="fuse2sounds/FuseSound9.wav" download>09</a></div>
-		<div class="box a"><a href="fuse2sounds/FuseSound10.wav" download>10</a></div>
-		<div class="box a"><a href="fuse2sounds/FuseSound11.wav" download>11</a></div>
-		<div class="box a"><a href="fuse2sounds/FuseSound12.wav" download>12</a></div>
-		<div class="box a"><a href="fuse2sounds/FuseSound13.wav" download>13</a></div>
-		<div class="box a"><a href="fuse2sounds/FuseSound14.wav" download>14</a></div>
-		<div class="box a"><a href="fuse2sounds/FuseSound15.wav" download>15</a></div>
-	</div>
+<button class="hoverbutton" onclick="randomTheme(document.getElementById('randTheme'))">Generate me a theme!</button>
 <br>
+<div id="hideShowRandTheme" class="boxtext" >
+	<p id="randTheme"></p>
+</div>
+
+<br>
+
+<button class="hoverbutton" onclick="HideShowDiv()">Show me all the themes!</button>
+<br>
+
+<div id="hideShow" class="boxtext" >
+	<p id="fj01"></p>
+</div>
+
+<br>
+
 
 <script >
 function HideShowDiv() {

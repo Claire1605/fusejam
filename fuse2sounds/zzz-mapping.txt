@@ -1,0 +1,15 @@
+1=Alarm_Pro
+2=Bells_Pro
+3=Boing_Pro
+4=Frog_Pro
+5=Mugs_Ext_Pro
+6=Necklace_Ext_Pro
+7=OcarinaHowl
+8=PaperTrash_Pro
+9=Pop_Pro
+10=Scratch_Pro
+11=Spring_Pro
+12=TinTrash_Ext_Pro
+13=Typing_Pro
+14=Whistle_Pro
+15=ZipBig_Pro

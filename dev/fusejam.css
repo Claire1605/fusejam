@@ -31,6 +31,14 @@ body {
 		padding: 20px;
 		font-size: 250%;
 	}
+	
+	.invisiblebox {
+		background-color: none;
+		color: #fff;
+		border-radius: 5px;
+		padding: 20px;
+		font-size: 250%;
+	}
 
 img { max-width: 100%; border:0; }
 
