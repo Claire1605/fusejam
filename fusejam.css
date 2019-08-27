@@ -118,7 +118,7 @@ h1, h2, h3, h4 {
 }
 
 .bgrdimage {
-	background-image: url('fuseposter2.png'), linear-gradient(to bottom, #5a3257,#bcbcbc);
+	background-image: url('fuseposter3.png'), linear-gradient(to bottom, #f3f3dd,#d8d5cd);
 	background-size: contain; 
 	background-repeat: no-repeat;
     background-position: center; 
