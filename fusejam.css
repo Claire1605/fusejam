@@ -125,21 +125,21 @@ h1, h2, h3, h4 {
 }
 
 .bgrdimage-FJ1 {
-	background-image: url('fuseposter1.png'), linear-gradient(to bottom, #f3f3dd,#d8d5cd);
+	background-image: url('fuseposter-transparent.png'), linear-gradient(to bottom, #7fa9f3,#84d7d9);
 	background-size: contain; 
 	background-repeat: no-repeat;
     background-position: center; 
 }
 
 .bgrdimage-FJ2 {
-	background-image: url('fuseposter2.png'), linear-gradient(to bottom, #f3f3dd,#d8d5cd);
+	background-image: url('fuseposter-transparent.png'), linear-gradient(to bottom, #573154,#020001);
 	background-size: contain; 
 	background-repeat: no-repeat;
     background-position: center; 
 }
 
 .bgrdimage-FJ3 {
-	background-image: url('fuseposter3.png'), linear-gradient(to bottom, #f3f3dd,#d8d5cd);
+	background-image: url('fuseposter-transparent.png'), linear-gradient(to bottom, #f3f3dd,#d8d5cd);
 	background-size: contain; 
 	background-repeat: no-repeat;
     background-position: center; 
