@@ -118,15 +118,29 @@ h1, h2, h3, h4 {
 }
 
 .bgrdimage {
-	background-image: url('fuseposter3.png'), linear-gradient(to bottom, #f3f3dd,#d8d5cd);
+	background-image: url('fuseposterzoomed-feathered.png'), linear-gradient(to bottom, #7fb7ea,#7dd5d7);
+	background-size: cover; 
+	background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.bgrdimage-FJ1 {
+	background-image: url('fuseposter1.png'), linear-gradient(to bottom, #f3f3dd,#d8d5cd);
 	background-size: contain; 
 	background-repeat: no-repeat;
     background-position: center; 
 }
 
-.bgrdimage-b {
-	background-image: url('fuseposterzoomed-feathered.png'), linear-gradient(to bottom, #7fb7ea,#7dd5d7);
-	background-size: cover; 
+.bgrdimage-FJ2 {
+	background-image: url('fuseposter2.png'), linear-gradient(to bottom, #f3f3dd,#d8d5cd);
+	background-size: contain; 
+	background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.bgrdimage-FJ3 {
+	background-image: url('fuseposter3.png'), linear-gradient(to bottom, #f3f3dd,#d8d5cd);
+	background-size: contain; 
 	background-repeat: no-repeat;
     background-position: center; 
 }
