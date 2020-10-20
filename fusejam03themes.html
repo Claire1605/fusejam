@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+	<meta charset="utf-8">
+	<title>Fuse Jam #02 Themes</title>
+	<meta name="description" content="A friendly and inclusive game jam that aims to grow the game development scene in Bristol.">
+	<meta name="keywords" content="game, game jam, game dev, indie game, fuse jam, bristol game, bristol, jam, event">
+	<meta name="author" content="Fuse Jam">
+	<meta name="viewport" content="width=520">
+
+	<base href="/">
+
+	<link href="https://fonts.googleapis.com/css?family=Rajdhani:700" rel="stylesheet">
+	<link href="fusejam.css" type="text/css" rel="stylesheet" >
+	<link rel="shortcut icon" href="fjicon.ico" />
+	
+	<meta property="og:title" content="FuseJam.Games">
+	<meta property="og:description" content="A friendly and inclusive game jam that aims to grow the game development scene in Bristol.">
+	<meta property="og:url" content="https://fusejam.games">
+	<meta property="og:image" content="https://fusejam.games/fuseposter.png">
+	<meta property="og:image:width" content="1000">
+	<meta property="og:image:height" content="1414">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="https://fusejam.games">
+	<meta name="twitter:creator" content="@FuseJamBristol">
+	
+</head>
+<body class="bgrdimage" onload="HideDiv()">
+
+<ul class="boxtext">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Jams</a>
+    <div class="dropdown-content">
+      <a href="fusejam01.html">Fuse Jam #01 - Emotions & Verbs</a>
+	  <a href="fusejam02.html">Fuse Jam #02 - Sounds of the Emocean</a>
+	  <a href="fusejam03.html">Fuse Jam #03 - Maps & Memories</a>
+    </div>
+  </li>
+</ul>
+
+<br>
+
+<h1 class="logo2">Fuse Jam #02 Themes</h1>
+
+<br>
+<p class="boxtext">Click your Fuse Sound! Depending on your browser it will either auto-download or open a new page to play it, where you can right click -> save as ... to save the sound.</p>
+
+<br><br>
+<div class="wrapper">
+		<div class="invisiblebox"></div>
+		<div class="box a"><a href="fuse2sounds/FuseSound1.wav" download>01</a></div>
+		<div class="box a"><a href="fuse2sounds/FuseSound2.wav" download>02</a></div>
+		<div class="box a"><a href="fuse2sounds/FuseSound3.wav" download>03</a></div>
+		<div class="box a"><a href="fuse2sounds/FuseSound4.wav" download>04</a></div>
+		<div class="box a"><a href="fuse2sounds/FuseSound5.wav" download>05</a></div>
+		<div class="box a"><a href="fuse2sounds/FuseSound6.wav" download>06</a></div>
+		<div class="box a"><a href="fuse2sounds/FuseSound7.wav" download>07</a></div>
+		<div class="box a"><a href="fuse2sounds/FuseSound8.wav" download>08</a></div>
+		<div class="box a"><a href="fuse2sounds/FuseSound9.wav" download>09</a></div>
+		<div class="box a"><a href="fuse2sounds/FuseSound10.wav" download>10</a></div>
+		<div class="box a"><a href="fuse2sounds/FuseSound11.wav" download>11</a></div>
+		<div class="box a"><a href="fuse2sounds/FuseSound12.wav" download>12</a></div>
+		<div class="box a"><a href="fuse2sounds/FuseSound13.wav" download>13</a></div>
+		<div class="box a"><a href="fuse2sounds/FuseSound14.wav" download>14</a></div>
+		<div class="box a"><a href="fuse2sounds/FuseSound15.wav" download>15</a></div>
+	</div>
+<br>
+
+<script >
+function HideShowDiv() {
+    var x = document.getElementById("hideShow");
+    if (x.style.display == "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function HideDiv() {
+    document.getElementById("hideShow").style.display = "none";
+    document.getElementById("hideShowRandTheme").style.display = "none";
+}
+
+function generateThemeList(target) {
+    var list = document.createElement('div'), p;
+	var table = document.createElement('table');
+	
+	list.appendChild(table);
+    target.appendChild(list);
+	var tableRowHeader = document.createElement('tr');
+	var th1 = document.createElement('th');
+	var th2 = document.createElement('th');
+	th1.appendChild(document.createTextNode("Emotions"));
+	th2.appendChild(document.createTextNode("Verbs"));
+	tableRowHeader.appendChild(th1);
+	tableRowHeader.appendChild(th2);
+	table.appendChild(tableRowHeader);
+	for (var i=0; i < fj01ListEmotions.length; i++)
+	{
+		var tableRow = document.createElement('tr');
+		var td1 = document.createElement('td');
+		var td2 = document.createElement('td');
+		td1.appendChild(document.createTextNode(fj01ListEmotions[i]));
+		td2.appendChild(document.createTextNode(fj01ListVerbs[i]));
+		tableRow.appendChild(td1);
+		tableRow.appendChild(td2);
+		table.appendChild(tableRow);
+	}
+}
+
+function randomTheme(target){
+	var x = document.getElementById("hideShowRandTheme");
+    if (x.style.display == "none") {
+        x.style.display = "block";
+    } 
+	
+	target.innerHTML = "";
+	var list = document.createElement('div'), p;
+	var table = document.createElement('table');
+	
+	list.appendChild(table);
+    target.appendChild(list);
+	var tableRowHeader = document.createElement('tr');
+	var th1 = document.createElement('td');
+	var th2 = document.createElement('td');
+	var th3 = document.createElement('td');
+	th1.appendChild(document.createTextNode("Emotion"));
+	th2.appendChild(document.createTextNode(""));
+	th3.appendChild(document.createTextNode("Verb"));
+	tableRowHeader.appendChild(th1);
+	tableRowHeader.appendChild(th2);
+	tableRowHeader.appendChild(th3);
+	table.appendChild(tableRowHeader);
+	
+	var rE =  fj01ListEmotions[Math.floor(Math.random() * (fj01ListEmotions.length-1))];
+	var rV =  fj01ListVerbs[Math.floor(Math.random() * (fj01ListVerbs.length-1))];
+	var tableRow = document.createElement('tr');
+	var td1 = document.createElement('th');
+	var td2 = document.createElement('th');
+	var td3 = document.createElement('th');
+	td1.appendChild(document.createTextNode(rE));
+	td2.appendChild(document.createTextNode("+"));
+	td3.appendChild(document.createTextNode(rV));
+	tableRow.appendChild(td1);
+	tableRow.appendChild(td2);
+	tableRow.appendChild(td3);
+	table.appendChild(tableRow);
+}
+
+var fj01ListEmotions = ['Joy', 'Embarrassment', 'Envy', 'Pride', 'Surprise', 'Serenity', 'Doubt', 'Anger', 'Relief', 'Humility', 'Despair', 'Hope', 'Guilt', 'Affection', 'Sadness', 'Excitement', 'Helplessness', 'Frustration', 'Awe', 'Annoyance', 'Fascination', 'Trust', 'Anticipation', 'Love', 'Patience', 'Comfort', 'Fury', 'Suspicion', 'Tension', 'Admiration', 'Courage', 'Optimism', 'Indecisiveness', 'Loneliness', 'Impulsivity', 'Gratitude'];
+var fj01ListVerbs = ['Make', 'Grow', 'Carry', 'Flow', 'Crash', 'Communicate', 'Wander', 'Whisper', 'Explore', 'Stretch', 'Touch', 'Prepare', 'Reflect', 'Repair', 'Notice', 'Guide', 'Join', 'Listen', 'Perform', 'Build', 'Share', 'Dream', 'Command', 'Signal', 'Dance', 'Expand', 'Hold', 'Measure', 'Protect', 'Sense', 'Track', 'Open', 'Support', 'Sing', 'Test', 'Fill'];
+
+generateThemeList(document.getElementById('fj01'));
+</script>
+</body>
+</html>
