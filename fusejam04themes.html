@@ -95,8 +95,7 @@ function HideDiv() {
 function generateThemeList(target) {
     var list = document.createElement('div'), p;
 	var table = document.createElement('table');
-	//table.rows.height = 200px;
-	
+
 	list.appendChild(table);
     target.appendChild(list);
 	var tableRowHeader = document.createElement('tr');
@@ -111,9 +110,10 @@ function generateThemeList(target) {
 	for (var i=0; i < fj04ListEmojis.length; i++)
 	{
 		var tableRow = document.createElement('tr');
+		tableRow.height = "200px";
 		var td1 = document.createElement('td');
 		var td2 = document.createElement('td');
-		td1.style.fontSize = "200%";
+		td1.style.fontSize = "300%";
 		td1.appendChild(document.createTextNode(fj04ListEmojis[i]));
 		
 		var img = document.createElement('img'); 
@@ -135,7 +135,6 @@ function randomTheme(target){
 	target.innerHTML = "";
 	var list = document.createElement('div'), p;
 	var table = document.createElement('table');
-	//table.rows.height = 200px;
 	
 	list.appendChild(table);
     target.appendChild(list);
@@ -155,9 +154,11 @@ function randomTheme(target){
 	var rE =  fj04ListEmojis[Math.floor(Math.random() * (fj04ListEmojis.length-1))];
 	var rV =  fj04ListGIFs[Math.floor(Math.random() * (fj04ListGIFs.length-1))];
 	var tableRow = document.createElement('tr');
+	tableRow.height = "200px";
 	var td1 = document.createElement('th');
 	var td2 = document.createElement('th');
 	var td3 = document.createElement('th');
+	td1.style.fontSize = "300%";
 	td1.appendChild(document.createTextNode(rE));
 	td2.appendChild(document.createTextNode("+"));
 	
