@@ -106,7 +106,7 @@ function generateThemeList(target) {
 	tableRowHeader.appendChild(th1);
 	tableRowHeader.appendChild(th2);
 	table.appendChild(tableRowHeader);
-	table.insertRow( ):
+	table.insertRow();
 	for (var i=0; i < fj04ListEmojis.length; i++)
 	{
 		var tableRow = document.createElement('tr');
@@ -148,7 +148,7 @@ function randomTheme(target){
 	tableRowHeader.appendChild(th2);
 	tableRowHeader.appendChild(th3);
 	table.appendChild(tableRowHeader);
-	table.insertRow( ):
+	table.insertRow();
 	
 	var rE =  fj04ListEmojis[Math.floor(Math.random() * (fj04ListEmojis.length-1))];
 	var rV =  fj04ListGIFs[Math.floor(Math.random() * (fj04ListGIFs.length-1))];
