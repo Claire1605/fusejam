@@ -110,7 +110,7 @@ function generateThemeList(target) {
 	for (var i=0; i < fj04ListEmojis.length; i++)
 	{
 		var tableRow = document.createElement('tr');
-		tableRow.height = "200px";
+		tableRow.style.height = "200px";
 		var td1 = document.createElement('td');
 		var td2 = document.createElement('td');
 		td1.style.fontSize = "300%";
@@ -154,7 +154,7 @@ function randomTheme(target){
 	var rE =  fj04ListEmojis[Math.floor(Math.random() * (fj04ListEmojis.length-1))];
 	var rV =  fj04ListGIFs[Math.floor(Math.random() * (fj04ListGIFs.length-1))];
 	var tableRow = document.createElement('tr');
-	tableRow.height = "200px";
+	tableRow.style.height = "200px";
 	var td1 = document.createElement('th');
 	var td2 = document.createElement('th');
 	var td3 = document.createElement('th');
