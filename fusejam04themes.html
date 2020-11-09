@@ -2,7 +2,7 @@
 <html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
 	<meta charset="utf-8">
-	<title>Fuse Jam #02 Themes</title>
+	<title>Fuse Jam #01 Themes</title>
 	<meta name="description" content="A friendly and inclusive game jam that aims to grow the game development scene in Bristol.">
 	<meta name="keywords" content="game, game jam, game dev, indie game, fuse jam, bristol game, bristol, jam, event">
 	<meta name="author" content="Fuse Jam">
@@ -26,7 +26,7 @@
 	<meta name="twitter:creator" content="@FuseJamBristol">
 	
 </head>
-<body class="bgrdimage-FJ3" onload="HideDiv()">
+<body class="bgrdimage-FJ1" onload="HideDiv()">
 
 <ul class="boxtext">
   <li><a href="index.html">Home</a></li>
@@ -43,33 +43,41 @@
 
 <br>
 
-<h1 class="logo2">Fuse Jam #03 Themes</h1>
+<h1 class="logo2">Fuse Jam #04 Themes</h1>
 
 <br>
 <br>
 
-<p class="boxtext">At Fuse Jam each team has their own unique theme to spark ideas for coming up with a game. In Fuse Jam #03, the overall theme was "Maps & Memories". Each team had a combination of two things - one planet description, and one object from a team-mate - that they could use in any way they liked to inspire their ideas. To make the theme generating process more fun, we had an interstellar theatrical experience for the jammers! Teams would enter the 'Space Station' where they used a strange device to travel to mysterious co-ordinates in space to a distant planet. An accompanying space diary gave them a brief description of the planet. Next they randomly chose from the objects they had bought with them by picking from a selection of space artefact boxes.</p>
+<p class="boxtext">At Fuse Jam each team has their own unique theme to spark ideas for coming up with a game. In Fuse Jam #04 we are going digital! To celebrate this, the themes are very much 'Internet' based, with a combination of Emojis and GIFs from https://archive.org/details/stock_footage.</p>
 
 <br>
-<a target="_blank" href="photos/03/FJ3-Themes.png">
-      <img src="photos/03/FJ3-Themes.png" width="500" height="967">
+
+<!--
+<a target="_blank" href="photos/01/FJ1-Themes.png">
+      <img src="photos/01/FJ1-Themes.png">
     </a>
+<br><br>
+-->
+
+<button class="hoverbutton" onclick="randomTheme(document.getElementById('randTheme'))">Generate me a theme!</button>
 <br>
+<div id="hideShowRandTheme" class="boxtext" >
+	<p id="randTheme"></p>
+</div>
 
 <br>
-<p class="boxtext">Each team-mate span the spinner on top of the space map. Following along the path created by the symbols, they eventually landed on a planet, corresponding to a number. This gave them access to that numbered page from inside the Space Diary.</p>
+
+<button class="hoverbutton" onclick="HideShowDiv()">Show me all the themes!</button>
 <br>
 
-<a target="_blank" href="photos/03/FJ3Themes-Maps.png">
-      <img src="photos/03/FJ3Themes-Maps.png">
-    </a>
-<br>
+<div id="hideShow" class="boxtext" >
+	<p id="fj01"></p>
+</div>
 
 <br>
-<p class="boxtext">For the second part of the theme, each team member had been previously asked to bring in a small object from home. The objects were placed inside space artefact boxes and shuffled, before all team mates voted (by simultaneously pointing) on the box they wanted, with one of their objects inside.</p>
-<br>
 
-<script >
+
+<script charset="utf-8">
 function HideShowDiv() {
     var x = document.getElementById("hideShow");
     if (x.style.display == "none") {
@@ -93,18 +101,23 @@ function generateThemeList(target) {
 	var tableRowHeader = document.createElement('tr');
 	var th1 = document.createElement('th');
 	var th2 = document.createElement('th');
-	th1.appendChild(document.createTextNode("Emotions"));
-	th2.appendChild(document.createTextNode("Verbs"));
+	th1.appendChild(document.createTextNode("Emojis"));
+	th2.appendChild(document.createTextNode("GIFs"));
 	tableRowHeader.appendChild(th1);
 	tableRowHeader.appendChild(th2);
 	table.appendChild(tableRowHeader);
-	for (var i=0; i < fj01ListEmotions.length; i++)
+	for (var i=0; i < fj04ListEmojis.length; i++)
 	{
 		var tableRow = document.createElement('tr');
 		var td1 = document.createElement('td');
 		var td2 = document.createElement('td');
-		td1.appendChild(document.createTextNode(fj01ListEmotions[i]));
-		td2.appendChild(document.createTextNode(fj01ListVerbs[i]));
+		td1.appendChild(document.createTextNode(fj04ListEmojis[i]));
+		
+		var img = document.createElement('img'); 
+            img.src = "FJ4\GIFs\0" + i + ".gif"; 
+            td2.appendChild(img); 
+		
+		//td2.appendChild(document.createTextNode(fj04ListGIFs[i]));
 		tableRow.appendChild(td1);
 		tableRow.appendChild(td2);
 		table.appendChild(tableRow);
@@ -127,16 +140,16 @@ function randomTheme(target){
 	var th1 = document.createElement('td');
 	var th2 = document.createElement('td');
 	var th3 = document.createElement('td');
-	th1.appendChild(document.createTextNode("Emotion"));
+	th1.appendChild(document.createTextNode("Emoji"));
 	th2.appendChild(document.createTextNode(""));
-	th3.appendChild(document.createTextNode("Verb"));
+	th3.appendChild(document.createTextNode("GIF"));
 	tableRowHeader.appendChild(th1);
 	tableRowHeader.appendChild(th2);
 	tableRowHeader.appendChild(th3);
 	table.appendChild(tableRowHeader);
 	
-	var rE =  fj01ListEmotions[Math.floor(Math.random() * (fj01ListEmotions.length-1))];
-	var rV =  fj01ListVerbs[Math.floor(Math.random() * (fj01ListVerbs.length-1))];
+	var rE =  fj04ListEmojis[Math.floor(Math.random() * (fj04ListEmojis.length-1))];
+	var rV =  fj04ListGIFs[Math.floor(Math.random() * (fj04ListGIFs.length-1))];
 	var tableRow = document.createElement('tr');
 	var td1 = document.createElement('th');
 	var td2 = document.createElement('th');
@@ -150,8 +163,8 @@ function randomTheme(target){
 	table.appendChild(tableRow);
 }
 
-var fj01ListEmotions = ['Joy', 'Embarrassment', 'Envy', 'Pride', 'Surprise', 'Serenity', 'Doubt', 'Anger', 'Relief', 'Humility', 'Despair', 'Hope', 'Guilt', 'Affection', 'Sadness', 'Excitement', 'Helplessness', 'Frustration', 'Awe', 'Annoyance', 'Fascination', 'Trust', 'Anticipation', 'Love', 'Patience', 'Comfort', 'Fury', 'Suspicion', 'Tension', 'Admiration', 'Courage', 'Optimism', 'Indecisiveness', 'Loneliness', 'Impulsivity', 'Gratitude'];
-var fj01ListVerbs = ['Make', 'Grow', 'Carry', 'Flow', 'Crash', 'Communicate', 'Wander', 'Whisper', 'Explore', 'Stretch', 'Touch', 'Prepare', 'Reflect', 'Repair', 'Notice', 'Guide', 'Join', 'Listen', 'Perform', 'Build', 'Share', 'Dream', 'Command', 'Signal', 'Dance', 'Expand', 'Hold', 'Measure', 'Protect', 'Sense', 'Track', 'Open', 'Support', 'Sing', 'Test', 'Fill'];
+var fj04ListEmojis = ['\uD83D\uDE01', '\uD83D\uDE02', '\uD83D\uDE05', '\uD83D\uDE09', '\uD83D\uDE0A', '\uD83D\uDE0B', '\uD83D\uDE0C', '\uD83D\uDE0D', '\uD83D\uDE0E', '\uD83D\uDE0F', '\uD83D\uDE11', '\uD83D\uDE12', '\uD83D\uDE16', '\uD83D\uDE18', '\uD83D\uDE1C', '\uD83D\uDE20', '\uD83D\uDE24', '\uD83D\uDE25', '\uD83D\uDE28', '\uD83D\uDE29', '\uD83D\uDE2A', '\uD83D\uDE2C', '\uD83D\uDE2D', '\uD83D\uDE30', '\uD83D\uDE31', '\uD83D\uDE34', '\uD83D\uDE35', '\uD83D\uDE37', '\uD83D\uDE43', '\uD83D\uDE44'];
+var fj04ListGIFs = [];
 
 generateThemeList(document.getElementById('fj01'));
 </script>
